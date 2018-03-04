@@ -1,0 +1,12 @@
+D:\Projects\MES\MES\bin\Debug\MES.exe.config
+D:\Projects\MES\MES\bin\Debug\MES.exe
+D:\Projects\MES\MES\bin\Debug\MES.pdb
+D:\Projects\MES\MES\obj\Debug\MES.csprojResolveAssemblyReference.cache
+D:\Projects\MES\MES\obj\Debug\MES.Form1.resources
+D:\Projects\MES\MES\obj\Debug\MES.Properties.Resources.resources
+D:\Projects\MES\MES\obj\Debug\MES.csproj.GenerateResource.Cache
+D:\Projects\MES\MES\obj\Debug\MES.exe
+D:\Projects\MES\MES\obj\Debug\MES.pdb
+D:\Projects\MES\MES\bin\Debug\MathNet.Numerics.dll
+D:\Projects\MES\MES\bin\Debug\MathNet.Numerics.xml
+D:\Projects\MES\MES\obj\Debug\MES.csproj.CoreCompileInputs.cache
