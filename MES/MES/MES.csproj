@@ -53,11 +53,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Element.cs" />
-    <Compile Include="View\Form1.cs">
+    <Compile Include="Utils\SimulationDataCreator.cs" />
+    <Compile Include="Utils\ValuePainter.cs" />
+    <Compile Include="View\MainView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="View\MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Integral.cs" />
     <Compile Include="Model\Mesh.cs" />
@@ -70,8 +72,14 @@
     <Compile Include="Utils\MatrixBuilder.cs" />
     <Compile Include="Utils\MeshCreator.cs" />
     <Compile Include="Utils\Solver.cs" />
-    <EmbeddedResource Include="View\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="View\MeshVisualiser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\MeshVisualiser.Designer.cs">
+      <DependentUpon>MeshVisualiser.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -82,6 +90,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\MeshVisualiser.resx">
+      <DependentUpon>MeshVisualiser.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

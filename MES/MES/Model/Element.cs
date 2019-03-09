@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MES
 {
-    class Element
+   public class Element
     {
          List<int> IDs = new List<int>(4);
         List<bool> pow = new List<bool>(4);

@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -67,8 +65,8 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.meshVisualiser1 = new MES.View.MeshVisualiser();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -77,8 +75,8 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.Gray;
+            this.tabPage3.Controls.Add(this.meshVisualiser1);
             this.tabPage3.Controls.Add(this.progressBar1);
-            this.tabPage3.Controls.Add(this.chart2);
             this.tabPage3.Controls.Add(this.groupBox3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
@@ -95,18 +93,6 @@
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 4;
             this.progressBar1.Visible = false;
-            // 
-            // chart2
-            // 
-            this.chart2.BackColor = System.Drawing.Color.Gray;
-            this.chart2.BackImageWrapMode = System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.TileFlipXY;
-            chartArea1.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea1);
-            this.chart2.Location = new System.Drawing.Point(6, 6);
-            this.chart2.Name = "chart2";
-            this.chart2.Size = new System.Drawing.Size(429, 365);
-            this.chart2.TabIndex = 3;
-            this.chart2.Text = "chart2";
             // 
             // groupBox3
             // 
@@ -440,6 +426,13 @@
             this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader4.Width = 116;
             // 
+            // meshVisualiser1
+            // 
+            this.meshVisualiser1.Location = new System.Drawing.Point(6, 6);
+            this.meshVisualiser1.Name = "meshVisualiser1";
+            this.meshVisualiser1.Size = new System.Drawing.Size(415, 364);
+            this.meshVisualiser1.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -452,7 +445,6 @@
             this.Name = "Form1";
             this.Text = "FEM 2D Heat Transfer";
             this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -464,7 +456,6 @@
         #endregion
 
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label13;
@@ -501,6 +492,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.CheckBox checkBox1;
+        private View.MeshVisualiser meshVisualiser1;
     }
 }
 

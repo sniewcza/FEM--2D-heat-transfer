@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MES
 {
-    class Node
+  public  class Node
     {
         private double x;
         private double y;

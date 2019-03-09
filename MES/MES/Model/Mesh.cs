@@ -7,7 +7,7 @@ using System.Collections.ObjectModel;
 
 namespace MES
 {
-    class Mesh
+   public class Mesh
     {
         public double Dx { get; private set; }
         public double Dy { get; private set; }
