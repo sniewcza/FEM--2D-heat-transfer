@@ -1,13 +1,9 @@
 ﻿
 using System.Collections.Generic;
-using System.Drawing;
-using MathNet.Numerics.LinearAlgebra;
-using MathNet.Numerics.LinearAlgebra.Double;
-using System.Collections.ObjectModel;
 
 namespace MES
 {
-   public class Mesh
+    public class Mesh
     {
         public double Dx { get; private set; }
         public double Dy { get; private set; }

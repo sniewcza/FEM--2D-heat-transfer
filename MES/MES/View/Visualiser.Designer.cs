@@ -1,6 +1,6 @@
 ﻿namespace MES.View
 {
-    partial class MeshVisualiser
+    partial class Visualiser
     {
         /// <summary> 
         /// Required designer variable.
@@ -37,6 +37,7 @@
             // 
             // chart1
             // 
+            this.chart1.BackColor = System.Drawing.Color.Gray;
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -48,7 +49,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(490, 330);
+            this.chart1.Size = new System.Drawing.Size(333, 276);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
@@ -58,7 +59,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.chart1);
             this.Name = "MeshVisualiser";
-            this.Size = new System.Drawing.Size(490, 330);
+            this.Size = new System.Drawing.Size(333, 276);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 

@@ -55,6 +55,12 @@
     <Compile Include="Model\Element.cs" />
     <Compile Include="Utils\SimulationDataCreator.cs" />
     <Compile Include="Utils\ValuePainter.cs" />
+    <Compile Include="View\DataInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\DataInput.Designer.cs">
+      <DependentUpon>DataInput.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\MainView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,12 +78,15 @@
     <Compile Include="Utils\MatrixBuilder.cs" />
     <Compile Include="Utils\MeshCreator.cs" />
     <Compile Include="Utils\Solver.cs" />
-    <Compile Include="View\MeshVisualiser.cs">
+    <Compile Include="View\Visualiser.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\MeshVisualiser.Designer.cs">
-      <DependentUpon>MeshVisualiser.cs</DependentUpon>
+    <Compile Include="View\Visualiser.Designer.cs">
+      <DependentUpon>Visualiser.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\DataInput.resx">
+      <DependentUpon>DataInput.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\MainView.resx">
       <DependentUpon>MainView.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,8 +99,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="View\MeshVisualiser.resx">
-      <DependentUpon>MeshVisualiser.cs</DependentUpon>
+    <EmbeddedResource Include="View\Visualiser.resx">
+      <DependentUpon>Visualiser.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

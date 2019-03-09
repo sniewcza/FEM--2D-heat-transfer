@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MES
+﻿namespace MES
 {
-  public  class Node
+    public  class Node
     {
         private double x;
         private double y;

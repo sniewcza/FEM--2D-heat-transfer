@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace MES
 {
-   public class Element
+    public class Element
     {
          List<int> IDs = new List<int>(4);
         List<bool> pow = new List<bool>(4);

@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MES.Model
+﻿namespace MES.Model
 {
-    class SimulationData
+   public class SimulationData
     {
         public double Ambient_Temperature { get; set; }
         public double Initial_Temperature { get; set; }
@@ -16,5 +10,9 @@ namespace MES.Model
         public double Specific_Heat { get; set; }
         public double Conductivity { get; set; }
         public double Density { get; set; }
+        public int XaxisNodesCount { get; set; }
+        public int YaxisNodesCount { get; set; }
+        public double SampleWidth { get; set; }
+        public double SampleHeight { get; set; }
     }
 }

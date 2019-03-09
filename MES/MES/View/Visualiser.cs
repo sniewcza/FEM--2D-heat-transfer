@@ -1,29 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
-using MathNet.Numerics.LinearAlgebra;
 using System.Threading;
 
 namespace MES.View
 {
-    public partial class MeshVisualiser : UserControl
+    public partial class Visualiser : UserControl
     {
-
-        public MeshVisualiser()
+        public Visualiser()
         {
             InitializeComponent();
             chart1.Legends.Clear();
             chart1.ChartAreas[0].AxisX.IsMarginVisible = false;
             chart1.ChartAreas[0].AxisY.IsMarginVisible = false;
             chart1.ChartAreas[0].AxisX.IsInterlaced = false;
-
         }
 
         private Series createSeriesFromMesh(Mesh mesh)
@@ -52,9 +46,9 @@ namespace MES.View
 
         public void visualiseSimulation(Mesh mesh, List<Color[]> snapShoots, int interval)
         {
-            chart1.Series.Clear();
+           // chart1.Series.Clear();
             Series interpolationSeries = CreateInterpolationPoints(mesh);
-            chart1.Series.Add(interpolationSeries);
+            chart1.Series["Interpolation"] = interpolationSeries;
             var axis = chart1.ChartAreas[0].AxisX;
             int sw = Convert.ToInt32((axis.ValueToPixelPosition(mesh.Nodes[mesh.Elements[0].IDS[1]].X) - axis.ValueToPixelPosition(mesh.Nodes[mesh.Elements[0].IDS[0]].X)) / 2.0);
             int sh = Convert.ToInt32((axis.ValueToPixelPosition(mesh.Nodes[mesh.Elements[0].IDS[3]].Y) - axis.ValueToPixelPosition(mesh.Nodes[mesh.Elements[0].IDS[0]].Y)) / 2.0);
@@ -63,7 +57,7 @@ namespace MES.View
             {
                 foreach (Color[] snapShoot in snapShoots)
                 {
-                   chart1.Invoke(new Action(()=> visualiseSnapshoot(interpolationSeries, snapShoot.ToList(), sw + 1, sh + 1)));
+                   chart1.Invoke(new Action(()=> visualiseSnapshoot(interpolationSeries, snapShoot.ToList(), sw+1 , sh+1 )));
                    Thread.Sleep(interval);
                 }
             }
@@ -74,7 +68,11 @@ namespace MES.View
         {
 
             // clean up previous images:
-            foreach (NamedImage ni in chart1.Images) ni.Dispose();
+            foreach (NamedImage ni in chart1.Images)
+            {
+                ni.Dispose();
+            }
+
             chart1.Images.Clear();
 
             // now create count images:
@@ -94,8 +92,8 @@ namespace MES.View
             Series series = new Series
             {
                 ChartType = SeriesChartType.Point,
-                Name = "Nodes",
-                Color = Color.Red,
+                Name = "Interpolation",
+                Color = Color.Blue,
                 MarkerSize = 3,
                 Enabled = true
             };

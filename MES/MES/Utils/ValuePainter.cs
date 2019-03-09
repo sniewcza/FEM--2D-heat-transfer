@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MES.Utils
 {
-   public class ValuePainter
+    public class ValuePainter
     {
         public byte Alpha = 0xff;
         private List<Color> ColorsOfMap = new List<Color>()
