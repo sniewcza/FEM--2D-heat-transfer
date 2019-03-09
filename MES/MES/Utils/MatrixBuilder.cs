@@ -25,6 +25,7 @@ namespace MES.Utils
             _mesh = mesh;
             _simulationData = simulationData;
             buildJacobianMatrix();
+            initializeLocalMatrixes();
         }
 
         private void buildJacobianMatrix()
@@ -77,10 +78,10 @@ namespace MES.Utils
 
         public Matrix<double> buildHglobalMatrix()
         {
-            foreach (Element el in _mesh.Elements)
-            {
-                createHlocalForElement(el);
-            }
+            //foreach (Element el in _mesh.Elements)
+            //{
+            //    createHlocalForElement(el);
+            //}
 
             double[,] HGlobalMatrix = createPlainHglobal();
 
@@ -94,10 +95,10 @@ namespace MES.Utils
 
         public Vector<double> buildPglobalVector()
         {
-            foreach (Element el in _mesh.Elements)
-            {
-                Plocal(el);
-            }
+            //foreach (Element el in _mesh.Elements)
+            //{
+            //    createPlocalForElement(el);
+            //}
 
             double[] PglobalVector = ZeroesPglobal();
 
@@ -110,10 +111,10 @@ namespace MES.Utils
 
         public Matrix<double> buildCglobalMatrix()
         {
-            foreach (Element el in _mesh.Elements)
-            {
-                Clocal(el);
-            }
+            //foreach (Element el in _mesh.Elements)
+            //{
+            //    createClocalForElement(el);
+            //}
 
             double[,] CglobalMatrix = new double[_mesh.Nodes.Count, _mesh.Nodes.Count];
             for (int k = 0; k < _mesh.Elements.Count; k++)
@@ -192,7 +193,7 @@ namespace MES.Utils
             el.H = Hlocal.Multiply(_simulationData.Conductivity).Multiply(_jacobianMatrix.Determinant()).ToArray(); // mnozymy przez wyznacznik jakobianu i przewodniość
         }
 
-        private void Plocal(Element el)
+        private void createPlocalForElement(Element el)
         {
             double[,] punktycalkowania = new double[2, 2];
             double[,] funkcja_ksztaltu_w_punkcie = new double[4, 2];
@@ -287,7 +288,7 @@ namespace MES.Utils
 
         }
 
-        private void Clocal(Element el)
+        private void createClocalForElement(Element el)
         {
             Vector<double> funkcje_ksztaltu = DenseVector.Create(4, 0.0);
             Matrix<double> tmp;
@@ -330,6 +331,16 @@ namespace MES.Utils
             //Matrix<double> m1 = m.Transpose().Multiply(m);
             el.C = c.Multiply(_simulationData.Density * _simulationData.Specific_Heat).ToArray();
             //el.C = c.ToArray(); ;
+        }
+
+        private void initializeLocalMatrixes()
+        {
+            foreach(Element el in _mesh.Elements)
+            {
+                createHlocalForElement(el);
+                createPlocalForElement(el);
+                createClocalForElement(el);
+            }
         }
     }
 }

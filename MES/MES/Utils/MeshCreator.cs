@@ -29,7 +29,7 @@ namespace MES.Utils
            
              generateElements();
 
-            return new Mesh(_nodes, _elements);
+            return new Mesh(_nodes, _elements,dx,dy);
         }
 
         private List<Node> generateNodes(int seedPartX, int seedPartY)

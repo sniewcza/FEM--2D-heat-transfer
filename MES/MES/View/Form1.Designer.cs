@@ -33,6 +33,7 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
@@ -66,7 +67,6 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -143,6 +143,16 @@
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Simulation Data";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(6, 347);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(87, 17);
+            this.checkBox1.TabIndex = 26;
+            this.checkBox1.Text = "Optimal step ";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -279,6 +289,7 @@
             this.SteptimeBox.Name = "SteptimeBox";
             this.SteptimeBox.Size = new System.Drawing.Size(100, 20);
             this.SteptimeBox.TabIndex = 11;
+            this.SteptimeBox.Text = "50";
             // 
             // SimulationtimeBox
             // 
@@ -286,6 +297,7 @@
             this.SimulationtimeBox.Name = "SimulationtimeBox";
             this.SimulationtimeBox.Size = new System.Drawing.Size(100, 20);
             this.SimulationtimeBox.TabIndex = 10;
+            this.SimulationtimeBox.Text = "500";
             // 
             // SpecificheatBox
             // 
@@ -293,6 +305,7 @@
             this.SpecificheatBox.Name = "SpecificheatBox";
             this.SpecificheatBox.Size = new System.Drawing.Size(100, 20);
             this.SpecificheatBox.TabIndex = 9;
+            this.SpecificheatBox.Text = "700";
             // 
             // DensityBox
             // 
@@ -300,6 +313,7 @@
             this.DensityBox.Name = "DensityBox";
             this.DensityBox.Size = new System.Drawing.Size(100, 20);
             this.DensityBox.TabIndex = 8;
+            this.DensityBox.Text = "7800";
             // 
             // AmbienttempBox
             // 
@@ -307,6 +321,7 @@
             this.AmbienttempBox.Name = "AmbienttempBox";
             this.AmbienttempBox.Size = new System.Drawing.Size(100, 20);
             this.AmbienttempBox.TabIndex = 7;
+            this.AmbienttempBox.Text = "1200";
             // 
             // InittempBox
             // 
@@ -314,6 +329,7 @@
             this.InittempBox.Name = "InittempBox";
             this.InittempBox.Size = new System.Drawing.Size(100, 20);
             this.InittempBox.TabIndex = 6;
+            this.InittempBox.Text = "100";
             // 
             // ConductivityBox
             // 
@@ -321,6 +337,7 @@
             this.ConductivityBox.Name = "ConductivityBox";
             this.ConductivityBox.Size = new System.Drawing.Size(100, 20);
             this.ConductivityBox.TabIndex = 5;
+            this.ConductivityBox.Text = "25";
             // 
             // AlfaFactorBox
             // 
@@ -328,6 +345,7 @@
             this.AlfaFactorBox.Name = "AlfaFactorBox";
             this.AlfaFactorBox.Size = new System.Drawing.Size(100, 20);
             this.AlfaFactorBox.TabIndex = 4;
+            this.AlfaFactorBox.Text = "300";
             // 
             // NodesYBox
             // 
@@ -335,6 +353,7 @@
             this.NodesYBox.Name = "NodesYBox";
             this.NodesYBox.Size = new System.Drawing.Size(100, 20);
             this.NodesYBox.TabIndex = 3;
+            this.NodesYBox.Text = "4";
             // 
             // NodesXBox
             // 
@@ -342,6 +361,7 @@
             this.NodesXBox.Name = "NodesXBox";
             this.NodesXBox.Size = new System.Drawing.Size(100, 20);
             this.NodesXBox.TabIndex = 2;
+            this.NodesXBox.Text = "4";
             // 
             // HeighttextBox
             // 
@@ -349,6 +369,7 @@
             this.HeighttextBox.Name = "HeighttextBox";
             this.HeighttextBox.Size = new System.Drawing.Size(100, 20);
             this.HeighttextBox.TabIndex = 1;
+            this.HeighttextBox.Text = "0,1";
             // 
             // WidthtextBox
             // 
@@ -356,6 +377,7 @@
             this.WidthtextBox.Name = "WidthtextBox";
             this.WidthtextBox.Size = new System.Drawing.Size(100, 20);
             this.WidthtextBox.TabIndex = 0;
+            this.WidthtextBox.Text = "0,1\r\n";
             // 
             // tabControl1
             // 
@@ -417,16 +439,6 @@
             this.columnHeader4.Text = "Avg Temp [C]";
             this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader4.Width = 116;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 347);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(87, 17);
-            this.checkBox1.TabIndex = 26;
-            this.checkBox1.Text = "Optimal step ";
-            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
