@@ -10,3 +10,16 @@ D:\Projects\MES\MES\obj\Debug\MES.pdb
 D:\Projects\MES\MES\bin\Debug\MathNet.Numerics.dll
 D:\Projects\MES\MES\bin\Debug\MathNet.Numerics.xml
 D:\Projects\MES\MES\obj\Debug\MES.csproj.CoreCompileInputs.cache
+C:\Projects\FEM--2D-heat-transfer\MES\MES\bin\Debug\MES.exe.config
+C:\Projects\FEM--2D-heat-transfer\MES\MES\bin\Debug\MES.exe
+C:\Projects\FEM--2D-heat-transfer\MES\MES\bin\Debug\MES.pdb
+C:\Projects\FEM--2D-heat-transfer\MES\MES\bin\Debug\MathNet.Numerics.dll
+C:\Projects\FEM--2D-heat-transfer\MES\MES\bin\Debug\MathNet.Numerics.xml
+C:\Projects\FEM--2D-heat-transfer\MES\MES\obj\Debug\MES.csprojAssemblyReference.cache
+C:\Projects\FEM--2D-heat-transfer\MES\MES\obj\Debug\MES.Form1.resources
+C:\Projects\FEM--2D-heat-transfer\MES\MES\obj\Debug\MES.Properties.Resources.resources
+C:\Projects\FEM--2D-heat-transfer\MES\MES\obj\Debug\MES.csproj.GenerateResource.cache
+C:\Projects\FEM--2D-heat-transfer\MES\MES\obj\Debug\MES.csproj.CoreCompileInputs.cache
+C:\Projects\FEM--2D-heat-transfer\MES\MES\obj\Debug\MES.csproj.CopyComplete
+C:\Projects\FEM--2D-heat-transfer\MES\MES\obj\Debug\MES.exe
+C:\Projects\FEM--2D-heat-transfer\MES\MES\obj\Debug\MES.pdb

@@ -52,19 +52,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Element.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Model\Element.cs" />
+    <Compile Include="View\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="View\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Integral.cs" />
-    <Compile Include="Mesh.cs" />
-    <Compile Include="Node.cs" />
+    <Compile Include="Model\Integral.cs" />
+    <Compile Include="Model\Mesh.cs" />
+    <Compile Include="Model\SimulationData.cs" />
+    <Compile Include="Model\Node.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
+    <Compile Include="Utils\Deviratives.cs" />
+    <Compile Include="Utils\IntegrationPoints.cs" />
+    <Compile Include="Utils\MatrixBuilder.cs" />
+    <Compile Include="Utils\MeshCreator.cs" />
+    <Compile Include="Utils\Solver.cs" />
+    <EmbeddedResource Include="View\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
