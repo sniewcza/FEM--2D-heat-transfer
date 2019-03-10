@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace MES.Utils
 {
 
-    class Solver
+    public class Solver
     {
         public event EventHandler<CustomEventArgs> onStepTimeSolve;
 

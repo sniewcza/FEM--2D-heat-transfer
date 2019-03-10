@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace MES.Utils
 {
-    class MeshCreator
+    public class MeshCreator
     {
         private List<Node> _nodes;
         private List<Element> _elements;

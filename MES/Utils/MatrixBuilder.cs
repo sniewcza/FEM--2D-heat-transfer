@@ -5,7 +5,7 @@ using System.Drawing;
 
 namespace MES.Utils
 {
-    class MatrixBuilder
+    public class MatrixBuilder
     {
         private readonly IntegrationPoints _points;
         private readonly Deviratives _deviratives;
